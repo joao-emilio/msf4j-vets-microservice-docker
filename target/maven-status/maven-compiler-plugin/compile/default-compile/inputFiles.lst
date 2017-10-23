@@ -1,7 +1,0 @@
-/Users/joaoemilio/devthinkers/wso2/wso2apiforum/msf4j-vets-microservice-docker/src/main/java/me/joaoemilio/petclinic/microservice/vets/model/Vet.java
-/Users/joaoemilio/devthinkers/wso2/wso2apiforum/msf4j-vets-microservice-docker/src/main/java/me/joaoemilio/petclinic/microservice/vets/Application.java
-/Users/joaoemilio/devthinkers/wso2/wso2apiforum/msf4j-vets-microservice-docker/src/main/java/me/joaoemilio/petclinic/microservice/vets/dao/VetRepository.java
-/Users/joaoemilio/devthinkers/wso2/wso2apiforum/msf4j-vets-microservice-docker/src/main/java/me/joaoemilio/petclinic/microservice/vets/model/Specialty.java
-/Users/joaoemilio/devthinkers/wso2/wso2apiforum/msf4j-vets-microservice-docker/src/main/java/me/joaoemilio/petclinic/microservice/vets/resource/VetResource.java
-/Users/joaoemilio/devthinkers/wso2/wso2apiforum/msf4j-vets-microservice-docker/src/main/java/me/joaoemilio/petclinic/microservice/vets/config/PersistenceConfig.java
-/Users/joaoemilio/devthinkers/wso2/wso2apiforum/msf4j-vets-microservice-docker/src/main/java/me/joaoemilio/petclinic/microservice/vets/exception/IllegalArgumentExceptionMapper.java
