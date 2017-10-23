@@ -58,11 +58,6 @@
             <version>5.1.44</version>
         </dependency>
         <dependency>
-            <groupId>org.hsqldb</groupId>
-            <artifactId>hsqldb</artifactId>
-            <version>${hsqldb.version}</version>
-        </dependency>
-        <dependency>
             <groupId>com.etsy</groupId>
             <artifactId>arbiter</artifactId>
             <version>0.5.1</version>
