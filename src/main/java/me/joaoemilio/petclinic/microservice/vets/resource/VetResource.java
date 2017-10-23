@@ -35,6 +35,12 @@ import java.util.List;
 @Path("/vets")
 public class VetResource {
 
+    @GET
+    @Path("/health")
+    public Response healthcheck() {
+        return Response.status(Response.Status.ACCEPTED).entity("OK").build();
+    }
+
     @Autowired
     private VetRepository repository;
 
