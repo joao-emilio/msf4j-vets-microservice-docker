@@ -63,6 +63,15 @@ public class VetRepository {
         manager.close();
     }
 
+    public void update( Vet model ) {
+        EntityManager manager = getEntityManager();
+        manager.getTransaction().begin();
+
+        manager.merge(model);
+        manager.getTransaction().commit();
+        manager.close();    
+    }
+
     public void remove(long id) {
         EntityManager manager = getEntityManager();
         manager.getTransaction().begin();

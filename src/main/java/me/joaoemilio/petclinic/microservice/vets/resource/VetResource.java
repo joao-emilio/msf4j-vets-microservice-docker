@@ -77,5 +77,11 @@ public class VetResource {
         return Response.status(Response.Status.ACCEPTED).build();
     }
 
+    @PUT
+    public Response updateVet(Vet model) {
+        repository.update(model);
+        return Response.status(Response.Status.ACCEPTED).build();
+    }
+
 
 }

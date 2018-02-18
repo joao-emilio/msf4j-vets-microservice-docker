@@ -84,6 +84,10 @@ public class PersistenceConfig {
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
+        System.out.println( "dbDriver: " + dbDriver + 
+           " dbURL: " + dbUrl +
+           " dbUsername: " + dbUsername +
+           " dbPassword: " + dbPassword + "" );
         dataSource.setDriverClassName(dbDriver);
         dataSource.setUrl(dbUrl);
         dataSource.setUsername(dbUsername);
