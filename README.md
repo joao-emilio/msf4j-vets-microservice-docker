@@ -37,23 +37,7 @@ curl -v -H "Content-Type: application/json" -X POST -d '{"firstName":"Joao","las
 You should able to see following output. 
 
 ```
-Note: Unnecessary use of -X or --request, POST is already inferred.
-*   Trying ::1...
-* TCP_NODELAY set
-* Connected to localhost (::1) port 8080 (#0)
-> POST /vets HTTP/1.1
-> Host: localhost:8080
-> User-Agent: curl/7.54.0
-> Accept: */*
-> Content-Type: application/json
-> Content-Length: 40
-> 
-* upload completely sent off: 40 out of 40 bytes
 < HTTP/1.1 201 Created
-< Connection: keep-alive
-< Content-Length: 0
-< 
-* Connection #0 to host localhost left intact
 ```
 
 2.) Get details of veterinarian
@@ -61,12 +45,11 @@ Note: Unnecessary use of -X or --request, POST is already inferred.
 ```
 curl -X GET  http://localhost:8080/vets/1 | python -m json.tool
 ```
+
+```
 You should able to see following output.
 
 ```
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-100    65  100    65    0     0   1685      0 --:--:-- --:--:-- --:--:--  1710
 {
     "firstName": "James",
     "id": 1,
@@ -75,14 +58,14 @@ You should able to see following output.
 }
 ```
 
-
 3.) Delete a veterinarian
 
 ```
 curl -v  -X DELETE  http://localhost:8080/vets/7
 ```
-
+```
 You should able to see following output.
+
 ``` 
  HTTP/1.1 202 Accepted
 ``` 
@@ -92,7 +75,7 @@ You should able to see following output.
 ``` 
 curl -v  -X GET  http://localhost:8080/catalog/7
  ```
- 
+``` 
  You should able to see following output.
  
 ```  
