@@ -36,7 +36,6 @@ curl -v -H "Content-Type: application/json" -X POST -d '{"firstName":"Joao","las
 ```
 You should able to see following output. 
 
-```
 < HTTP/1.1 201 Created
 ```
 
@@ -49,7 +48,6 @@ curl -X GET  http://localhost:8080/vets/1 | python -m json.tool
 ```
 You should able to see following output.
 
-```
 {
     "firstName": "James",
     "id": 1,
@@ -66,7 +64,6 @@ curl -v  -X DELETE  http://localhost:8080/vets/7
 ```
 You should able to see following output.
 
-``` 
  HTTP/1.1 202 Accepted
 ``` 
 
@@ -78,7 +75,6 @@ curl -v  -X GET  http://localhost:8080/catalog/7
 ``` 
  You should able to see following output.
  
-```  
  HTTP/1.1 404 Not Found
 Problem accessing: /catalog/7. Reason: Not Found
  ``` 
