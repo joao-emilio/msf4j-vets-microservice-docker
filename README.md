@@ -1,5 +1,10 @@
 # How to build and run the sample
 
+clone the repository
+```
+git clone https://github.com/joao-emilio/msf4j-vets-microservice-docker.git
+```
+
 ## How to build the sample
 
 From this directory, run
@@ -11,7 +16,7 @@ docker build . -t vets:1.0.0
 
 ## How to run the sample
 
-From the target directory, run
+From this directory, run
 ```
 docker-compose up
 ```
